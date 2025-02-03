@@ -1,5 +1,5 @@
 :root {
-  --color-sub: #181846;
+  --color-sub: #1a1a29;
 }
 
 body {
@@ -7,6 +7,26 @@ body {
   background-size: cover; /* To cover the entire screen */
   background-position: center; /* Center the background image */
   background-attachment: fixed; /* Keep background fixed while scrolling */
+}
+
+#typed-output {
+  text-align: center;
+  padding-top: 20vh;
+  color: white;
+  font-size: 30px;
+}
+
+#name {
+  font-size: 80px; /* Make the name larger */
+  color: white;   /* Set text color to white */
+  font-family: 'Arial', sans-serif; /* Choose a font family */
+}
+
+/* Style for the highlighted part (Kipkemboi) */
+.highlight {
+  font-size: 80px; /* Make the highlighted part bigger */
+  color: #478a9b;  /* Choose a color for the highlighted part */
+  font-weight: bold; /* Make it bold */
 }
 
 .btn--sub {

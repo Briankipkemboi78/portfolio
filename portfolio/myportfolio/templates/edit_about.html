@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="edit-about-container">
+    <h1>Edit About Me</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <!-- Profile Edit Form -->
+        <div class="profile-form">
+            <h2>Edit Profile</h2>
+            {{ profile_form.as_p }}
+        </div>
+
+        <!-- Skills Edit Form -->
+        <div class="skills-form">
+            <h2>Edit Skills</h2>
+            {% for form in skill_forms %}
+                <div>{{ form.as_p }}</div>
+            {% endfor %}
+        </div>
+
+        <!-- Projects Edit Form -->
+        <div class="projects-form">
+            <h2>Edit Projects</h2>
+            {% for form in project_forms %}
+                <div>{{ form.as_p }}</div>
+            {% endfor %}
+        </div>
+
+        <button type="submit">Save Changes</button>
+    </form>
+</div>
+{% endblock %}

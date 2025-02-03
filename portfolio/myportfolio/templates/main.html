@@ -16,7 +16,9 @@
     <!-- Dev Search UI -->
     <link rel="stylesheet" href="{% static 'styles/app.css' %}" />
 
-    <title>DevSearch - Connect with Developers!</title>
+    <title>Brian Kipkemboi</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
 
@@ -40,9 +42,16 @@
         <button class="alert__close">x</button>
     </div>
 
+
+
     {% endfor %}
 
     {% endif %}
+
+    <div id="typed-output" style="text-align: center; padding-top: 20vh;">
+        <h1 id="name">Hi, I am <span class="highlight">Brian Kipkemboi</span></h1>
+        <h2 id="profession"></h2>
+    </div>
 
 
     {% block content %}
@@ -51,5 +60,6 @@
 </body>
 <script src="{% static 'uikit/app.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/typed.js' %}"></script>
 
 </html>
