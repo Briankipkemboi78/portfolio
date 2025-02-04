@@ -1,41 +1,31 @@
 from django.db import models
-from django.contrib.auth.models import User
 
-class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    imageURL = models.URLField(blank=True, null=True)
-    name = models.CharField(max_length=255)
-    short_intro = models.CharField(max_length=255)
-    location = models.CharField(max_length=255)
-    bio = models.TextField()
-    social_github = models.URLField(blank=True, null=True)
-    social_linkedin = models.URLField(blank=True, null=True)
+class About(models.Model):
+    short_description = models.TextField()
+    description = models.TextField()
+    image = models.ImageField(upload_to="about")
+
+
+    class Meta:
+        verbose_name = "About Me"
+        verbose_name_plural = "About Me"
+
+    def __str__(self):
+        return "About Me"
+    
+# Service Model
+class Service(models.Model):
+    name = models.CharField(max_length=100, verbose_name="Service name")
+    description = models.TextField(verbose_name="About service")
 
     def __str__(self):
         return self.name
-
-class Skill(models.Model):
-    profile = models.ForeignKey(Profile, related_name="skills", on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
-    description = models.TextField()
-    top_skill = models.BooleanField(default=False)
-
-    def __str__(self):
-        return self.name
-
-class Project(models.Model):
-    profile = models.ForeignKey(Profile, related_name="projects", on_delete=models.CASCADE)
-    title = models.CharField(max_length=255)
-    imageURL = models.URLField(blank=True, null=True)
-    description = models.TextField()
-    tags = models.ManyToManyField('Tag', related_name="projects")
+    
+# Recent work models
+class RecentWork(models.Model):
+    title = models.CharField(max_length=100, verbose_name="Work title")
+    image = models.ImageField(upload_to="works")
 
     def __str__(self):
         return self.title
-
-class Tag(models.Model):
-    name = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.name
-
+    

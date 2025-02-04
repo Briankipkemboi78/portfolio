@@ -1,8 +1,17 @@
-{% extends 'base.html' %}
+{% include 'navbar.html' %}
 
 {% block content %}
 <div class="edit-about-container">
-    <h1>Edit About Me</h1>
+    <style>
+        body {
+            background: none !important; 
+        }
+
+        .about-container {
+            
+            background-color: #f9f9f9; 
+        }
+    </style>
 
     <form method="POST">
         {% csrf_token %}
