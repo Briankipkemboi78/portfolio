@@ -1,17 +1,17 @@
 from django import forms
-from .models import Profile, Skill, Project
+from .models import About, Service, RecentWork
 
-class ProfileForm(forms.ModelForm):
+class AboutForm(forms.ModelForm):
     class Meta:
-        model = Profile
-        fields = ['name', 'short_intro', 'location', 'bio', 'social_github', 'social_linkedin', 'profile_image']
+        model = About
+        fields = ['short_description', 'description', 'image']
 
-class SkillForm(forms.ModelForm):
+class ServiceForm(forms.ModelForm):
     class Meta:
-        model = Skill
-        fields = ['name', 'description', 'top_skill']
+        model = Service
+        fields = ['name', 'description']
 
-class ProjectForm(forms.ModelForm):
+class RecentWorkForm(forms.ModelForm):
     class Meta:
-        model = Project
-        fields = ['title', 'imageURL', 'description', 'tags']
+        model = RecentWork
+        fields = ['title', 'image']
