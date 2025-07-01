@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Kipkemboi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="#"class="social-link" > <svg class="nav-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 3v18h18"/>
+                        <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                    </svg>
+                    <span class="brand-text">Brian Kipkemboi</span> </a>
+                </div>
+                
+                <div class="desktop-nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#resume" class="cta-button">Download Resume</a>
+                </div>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                    <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="mobile-nav hidden">
+                <div class="mobile-nav-content">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#skills" class="mobile-nav-link">Skills</a>
+                    <a href="#projects" class="mobile-nav-link">Projects</a>
+                    <a href="#experience" class="mobile-nav-link">Experience</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                    <a href="#resume" class="mobile-nav-link">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-greeting">
+                            <span class="greeting-text">Hello, I'm</span>
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="name-highlight">Brian Kipkemboi</span><br>
+                            Data Analytics Expert
+                        </h1>
+                        <p class="hero-description">
+                            Transforming raw data into actionable insights through advanced SQL queries, 
+                            Python analytics, and compelling visualizations. I help businesses make 
+                            data-driven decisions that drive growth and efficiency.
+                        </p>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn-secondary">Let's Connect</a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="data-visualization">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3>Live Analytics Dashboard</h3>
+                                <div class="chart-controls">
+                                    <span class="control-dot active"></span>
+                                    <span class="control-dot"></span>
+                                    <span class="control-dot"></span>
+                                </div>
+                            </div>
+                            <div class="chart-content">
+                                <div class="chart-bars">
+                                    <div class="bar" style="height: 60%;" data-value="85"></div>
+                                    <div class="bar" style="height: 80%;" data-value="92"></div>
+                                    <div class="bar" style="height: 45%;" data-value="67"></div>
+                                    <div class="bar" style="height: 90%;" data-value="98"></div>
+                                    <div class="bar" style="height: 70%;" data-value="78"></div>
+                                    <div class="bar" style="height: 85%;" data-value="89"></div>
+                                </div>
+                                <div class="chart-metrics">
+                                    <div class="metric">
+                                        <span class="metric-label">Accuracy</span>
+                                        <span class="metric-value">94.5%</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Processing Speed</span>
+                                        <span class="metric-value">2.3s</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="floating-card sql-card">
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/>
+                                <polygon points="18,2 22,6 12,16 8,16 8,12"/>
+                            </svg>
+                            <div class="card-content">
+                                <div class="card-title">SQL Mastery</div>
+                                <div class="card-subtitle">Complex Queries</div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card python-card">
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                            <div class="card-content">
+                                <div class="card-title">Python Analytics</div>
+                                <div class="card-subtitle">ML & Statistics</div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card viz-card">
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"/>
+                                <line x1="12" y1="20" x2="12" y2="4"/>
+                                <line x1="6" y1="20" x2="6" y2="14"/>
+                            </svg>
+                            <div class="card-content">
+                                <div class="card-title">Data Visualization</div>
+                                <div class="card-subtitle">Interactive Dashboards</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    Passionate data analyst with expertise in turning complex datasets into clear, 
+                    actionable insights that drive business success.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            With over 3 years of experience in data analytics, I specialize in extracting 
+                            meaningful insights from complex datasets. My expertise spans across SQL database 
+                            management, Python programming for statistical analysis, and creating compelling 
+                            data visualizations that tell powerful stories.
+                        </p>
+                        <p class="about-paragraph">
+                            I'm passionate about helping organizations make data-driven decisions by 
+                            transforming raw data into actionable intelligence. Whether it's optimizing 
+                            business processes, identifying market trends, or predicting future outcomes, 
+                            I bring a analytical mindset and technical expertise to every project.
+                        </p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z"/>
+                                <path d="M19 11h-4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z"/>
+                                <path d="M12 2L9 11h6l-3-9z"/>
+                            </svg>
+                            <div class="highlight-content">
+                                <h4 class="highlight-title">Award-Winning Projects</h4>
+                                <p class="highlight-description">Recognized for innovative data solutions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <div class="highlight-content">
+                                <h4 class="highlight-title">Team Leadership</h4>
+                                <p class="highlight-description">Led cross-functional analytics teams</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <div class="highlight-content">
+                                <h4 class="highlight-title">Continuous Learning</h4>
+                                <p class="highlight-description">Always exploring new technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Analyst at work" class="about-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-stat">
+                                    <span class="overlay-number">1M+</span>
+                                    <span class="overlay-label">Rows Analyzed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-description">
+                    Comprehensive expertise across the data analytics stack, from database management 
+                    to advanced machine learning implementations.
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- SQL Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon-wrapper sql-icon">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/>
+                                <polygon points="18,2 22,6 12,16 8,16 8,12"/>
+                            </svg>
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-title">SQL Database Management</h3>
+                            <p class="category-description">Advanced query optimization and database design</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Complex Queries & Joins</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Stored Procedures & Functions</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Performance Optimization</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Warehousing</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-technologies">
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">Oracle</span>
+                        <span class="tech-tag">BigQuery</span>
+                    </div>
+                </div>
+
+                <!-- Python Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon-wrapper python-icon">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-title">Python Analytics</h3>
+                            <p class="category-description">Statistical analysis and machine learning</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas & NumPy</span>
+                                <span class="skill-level">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Statistical Analysis</span>
+                                <span class="skill-level">89%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 89%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-level">86%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Cleaning & ETL</span>
+                                <span class="skill-level">94%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 94%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-technologies">
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Jupyter</span>
+                    </div>
+                </div>
+
+                <!-- Data Visualization Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon-wrapper viz-icon">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"/>
+                                <line x1="12" y1="20" x2="12" y2="4"/>
+                                <line x1="6" y1="20" x2="6" y2="14"/>
+                            </svg>
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-title">Data Visualization</h3>
+                            <p class="category-description">Interactive dashboards and compelling storytelling</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tableau</span>
+                                <span class="skill-level">91%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-level">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Matplotlib & Seaborn</span>
+                                <span class="skill-level">89%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 89%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">D3.js & Interactive Charts</span>
+                                <span class="skill-level">83%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 83%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-technologies">
+                        <span class="tech-tag">Tableau</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Excel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Showcase of data analytics projects demonstrating real-world problem solving 
+                    and technical expertise across various industries.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-commerce Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">E-commerce Analytics</span>
+                            <span class="project-impact">+35% Revenue</span>
+                        </div>
+                        <h3 class="project-title">Customer Behavior Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Comprehensive analytics platform analyzing customer journey, purchase patterns, 
+                            and churn prediction using advanced SQL queries and Python machine learning models.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Tableau</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Financial Risk Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Financial Analytics</span>
+                            <span class="project-impact">92% Accuracy</span>
+                        </div>
+                        <h3 class="project-title">Credit Risk Assessment Model</h3>
+                        <p class="project-description">
+                            Machine learning model for credit risk assessment using ensemble methods, 
+                            reducing default rates by 25% through predictive analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Power BI</span>
+                            <span class="tech-badge">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Supply Chain Optimization">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Supply Chain</span>
+                            <span class="project-impact">-20% Costs</span>
+                        </div>
+                        <h3 class="project-title">Supply Chain Optimization</h3>
+                        <p class="project-description">
+                            Data-driven optimization of supply chain operations using advanced analytics 
+                            to reduce costs and improve delivery times across multiple locations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Tableau</span>
+                            <span class="tech-badge">Oracle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Marketing Analytics">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Marketing Analytics</span>
+                            <span class="project-impact">+150% ROI</span>
+                        </div>
+                        <h3 class="project-title">Marketing Campaign Optimization</h3>
+                        <p class="project-description">
+                            Multi-channel marketing analytics platform tracking campaign performance, 
+                            customer acquisition costs, and lifetime value optimization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">BigQuery</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Looker</span>
+                            <span class="tech-badge">GA4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Healthcare Analytics">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Healthcare</span>
+                            <span class="project-impact">85% Accuracy</span>
+                        </div>
+                        <h3 class="project-title">Patient Outcome Prediction</h3>
+                        <p class="project-description">
+                            Predictive analytics model for patient outcomes using electronic health records, 
+                            improving treatment decisions and resource allocation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Real Estate Analytics">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Real Estate</span>
+                            <span class="project-impact">+40% Accuracy</span>
+                        </div>
+                        <h3 class="project-title">Property Valuation Model</h3>
+                        <p class="project-description">
+                            Advanced regression model for property valuation using market data, 
+                            location analytics, and economic indicators for accurate pricing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Power BI</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-description">
+                    Career journey showcasing progressive growth in data analytics roles 
+                    across diverse industries and challenging projects.
+                </p>
+            </div>
+            
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card current">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <h3 class="experience-title">Senior Data Analyst</h3>
+                                    <p class="experience-company">TechCorp Solutions</p>
+                                    <p class="experience-period">2022 - Present</p>
+                                </div>
+                                <div class="experience-logo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 3v18h18"/>
+                                        <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="experience-description">
+                                <p>Leading data analytics initiatives for enterprise clients, developing predictive models 
+                                and interactive dashboards that drive strategic decision-making.</p>
+                                <ul class="experience-achievements">
+                                    <li>Increased client revenue by 35% through advanced customer segmentation analysis</li>
+                                    <li>Built automated reporting systems reducing manual work by 60%</li>
+                                    <li>Led team of 4 junior analysts on complex multi-client projects</li>
+                                    <li>Implemented machine learning models with 92% accuracy for churn prediction</li>
+                                </ul>
+                            </div>
+                            <div class="experience-skills">
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Tableau</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Team Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <h3 class="experience-title">Data Analyst</h3>
+                                    <p class="experience-company">DataInsights Inc.</p>
+                                    <p class="experience-period">2020 - 2022</p>
+                                </div>
+                                <div class="experience-logo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="18" y1="20" x2="18" y2="10"/>
+                                        <line x1="12" y1="20" x2="12" y2="4"/>
+                                        <line x1="6" y1="20" x2="6" y2="14"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="experience-description">
+                                <p>Specialized in financial data analysis and risk assessment models for banking and 
+                                fintech clients, delivering actionable insights through advanced statistical methods.</p>
+                                <ul class="experience-achievements">
+                                    <li>Developed credit risk models reducing default rates by 25%</li>
+                                    <li>Created comprehensive financial dashboards for C-level executives</li>
+                                    <li>Optimized SQL queries improving report generation speed by 40%</li>
+                                    <li>Collaborated with cross-functional teams on product development</li>
+                                </ul>
+                            </div>
+                            <div class="experience-skills">
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">Statistical Analysis</span>
+                                <span class="skill-tag">Risk Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <h3 class="experience-title">Junior Data Analyst</h3>
+                                    <p class="experience-company">StartupAnalytics</p>
+                                    <p class="experience-period">2019 - 2020</p>
+                                </div>
+                                <div class="experience-logo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="experience-description">
+                                <p>Started career in fast-paced startup environment, focusing on marketing analytics 
+                                and customer behavior analysis to support growth initiatives.</p>
+                                <ul class="experience-achievements">
+                                    <li>Built first automated reporting pipeline saving 20 hours/week</li>
+                                    <li>Analyzed user behavior data to improve conversion rates by 15%</li>
+                                    <li>Created data visualization standards adopted company-wide</li>
+                                    <li>Supported A/B testing framework for product optimization</li>
+                                </ul>
+                            </div>
+                            <div class="experience-skills">
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Excel</span>
+                                <span class="skill-tag">Google Analytics</span>
+                                <span class="skill-tag">Data Visualization</span>
+                                <span class="skill-tag">A/B Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot final"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card education">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <h3 class="experience-title">Master's in Data Science</h3>
+                                    <p class="experience-company">University of Technology</p>
+                                    <p class="experience-period">2017 - 2019</p>
+                                </div>
+                                <div class="experience-logo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="experience-description">
+                                <p>Comprehensive graduate program covering statistical analysis, machine learning, 
+                                and data engineering with focus on real-world applications.</p>
+                                <ul class="experience-achievements">
+                                    <li>Graduated Magna Cum Laude with 3.8 GPA</li>
+                                    <li>Thesis on "Predictive Analytics in Healthcare" - Published in Journal</li>
+                                    <li>Teaching Assistant for Statistics and Data Mining courses</li>
+                                    <li>Winner of University Data Science Competition 2019</li>
+                                </ul>
+                            </div>
+                            <div class="experience-skills">
+                                <span class="skill-tag">Statistics</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Research</span>
+                                <span class="skill-tag">Academic Writing</span>
+                                <span class="skill-tag">Teaching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Ready to transform your data into actionable insights? Let's discuss how 
+                    I can help drive your business forward with data analytics.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3 class="contact-title">Get In Touch</h3>
+                        <p class="contact-description">
+                            I'm always interested in new opportunities and challenging projects. 
+                            Whether you need help with data analysis, visualization, or building 
+                            predictive models, I'd love to hear from you.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-method-title">Email</h4>
+                                <a href="mailto:your.email@example.com" class="contact-value">your.email@example.com</a>
+                                <p class="contact-method-description">Best way to reach me for project inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-method-title">Phone</h4>
+                                <a href="tel:+1234567890" class="contact-value">+1 (234) 567-8900</a>
+                                <p class="contact-method-description">Available for calls Mon-Fri, 9AM-6PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-method-title">LinkedIn</h4>
+                                <a href="https://linkedin.com/in/yourprofile" class="contact-value">linkedin.com/in/yourprofile</a>
+                                <p class="contact-method-description">Connect with me professionally</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-method-title">GitHub</h4>
+                                <a href="https://github.com/yourusername" class="contact-value">github.com/yourusername</a>
+                                <p class="contact-method-description">Check out my code and projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectType" class="form-label">Project Type *</label>
+                            <select id="projectType" name="projectType" class="form-select" required>
+                                <option value="">Select project type</option>
+                                <option value="data-analysis">Data Analysis</option>
+                                <option value="dashboard-creation">Dashboard Creation</option>
+                                <option value="machine-learning">Machine Learning</option>
+                                <option value="database-optimization">Database Optimization</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-50k">$15,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                                <option value="discuss">Let's discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" class="form-textarea" 
+                                placeholder="Tell me about your project, goals, and any specific requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">
+                            <svg class="submit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9"/>
+                            </svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                        </svg>
+                        <span class="footer-brand-text">DataAnalyst</span>
+                    </div>
+                    <p class="footer-description">
+                        Transforming data into actionable insights through advanced analytics, 
+                        machine learning, and compelling visualizations.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="#about" class="footer-link">About</a></li>
+                            <li><a href="#skills" class="footer-link">Skills</a></li>
+                            <li><a href="#projects" class="footer-link">Projects</a></li>
+                            <li><a href="#experience" class="footer-link">Experience</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Data Analysis</a></li>
+                            <li><a href="#" class="footer-link">Machine Learning</a></li>
+                            <li><a href="#" class="footer-link">Data Visualization</a></li>
+                            <li><a href="#" class="footer-link">Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Your Name. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
