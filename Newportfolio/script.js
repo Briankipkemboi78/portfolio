@@ -286,7 +286,7 @@ function initializeSkillBars() {
 function animateSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');
     skillBars.forEach((bar, index) => {
-        const targetWidth = bar.style.width;
+        const targetWidth = bar.getAttribute('data-width');  // Read from data attribute
         bar.style.width = '0%';
         
         setTimeout(() => {

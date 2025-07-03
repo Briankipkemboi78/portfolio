@@ -46,6 +46,18 @@ body {
 }
 
 /* Navigation */
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar {
     position: fixed;
     top: 0;
