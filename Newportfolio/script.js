@@ -449,6 +449,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 5000);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
+
 // Enhanced form interactions
 document.addEventListener('DOMContentLoaded', function() {
     const formInputs = document.querySelectorAll('.form-input, .form-select, .form-textarea');
