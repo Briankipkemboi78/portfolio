@@ -1411,6 +1411,9 @@ body {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    text-decoration: none;   /* removes underline */
+    color: inherit;          /* keeps your theme colors */
+    cursor: pointer;
 }
 
 .footer-logo-icon {
